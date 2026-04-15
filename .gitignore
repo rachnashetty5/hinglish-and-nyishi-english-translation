@@ -1,0 +1,116 @@
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+venv312/
+.venv/
+env/
+.env/
+ENV/
+
+# ── Python bytecode & cache ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+
+# ── Python build / dist artifacts ────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+pip-wheel-metadata/
+MANIFEST
+
+# ── macOS system files ────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ── IDE folders ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── HuggingFace / Transformers caches ────────────────────────────────────────
+# HF hub download cache (default: ~/.cache/huggingface)
+# Local project-level cache dirs that may appear during training
+.cache/
+huggingface/
+transformers_cache/
+hf_cache/
+
+# Tokenizer fast-model artefacts generated at runtime
+tokenizer.json
+special_tokens_map.json
+tokenizer_config.json
+added_tokens.json
+
+# ── Model checkpoints & training outputs ─────────────────────────────────────
+# Trainer saves checkpoint-* subdirs inside output_dir (results/)
+results/
+checkpoints/
+checkpoint-*/
+runs/
+wandb/
+mlruns/
+
+# ── Dataset cache ─────────────────────────────────────────────────────────────
+# HuggingFace datasets library writes arrow cache next to source files
+data/.cache/
+*.arrow
+*.arrow.tmp
+*.lock
+dataset_dict.json
+dataset_info.json
+state.json
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+trainer_state.json
+training_args.bin
+all_results.json
+train_results.json
+eval_results.json
+
+# ── Streamlit cache ───────────────────────────────────────────────────────────
+.streamlit/
+
+# ── Jupyter / notebook checkpoints ───────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Misc large / sensitive files ─────────────────────────────────────────────
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.zip
+*.tar.gz
+*.tar
+*.7z
+*.csv.gz
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+secrets.json
+credentials.json
+
+# ── pytest / coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
